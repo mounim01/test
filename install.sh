@@ -112,7 +112,7 @@ step_4_apache() {
 step_5_php() {
   echo "---------------------------------------------------------------------"
   echo "${JAUNE}Commence l'étape 5 php5${NORMAL}"
-  apt_install php5 libapache2-mod-php5 php5-json php5-mysql
+  apt_install php libapache2-mod-php php-json php-mysql
   apt install -y php5-curl
   apt install -y php5-gd
   apt install -y php5-imap
@@ -126,7 +126,7 @@ step_5_php() {
   apt install -y php5-ssh2
   apt install -y php5-mbstring
   apt install -y php5-ldap
-  echo "${VERT}étape 5 php5 réussie${NORMAL}"
+  echo "${VERT}étape 5 php réussie${NORMAL}"
 }
 
 step_6_jeedom_download() {
